@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ImageContainer.module.css";
 import VideoRef from "../../assets/media/toothless-dragon-toothless.gif";
 

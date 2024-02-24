@@ -8,18 +8,15 @@
   text-align: justify;
   text-wrap: pretty;
   margin: 10%;
-  grid-column-start: 1
 }
-
-.containerTitle {
-  color: #2d3d33;
+.containerNumber{
+  color: #ffffff;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.4em;
 }
-
 .containerParagraph {
-  color: #2d3d33;
+  color: #ffffff;
   text-transform: none;
   line-height: 1.5em;
   font-size: 18px;
