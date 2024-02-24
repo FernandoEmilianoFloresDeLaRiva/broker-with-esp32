@@ -7,19 +7,20 @@
   height: 100%;
   text-align: justify;
   text-wrap: pretty;
+  margin: 10%;
 }
 
 .containerTitle {
+  color: #2d3d33;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.4em;
 }
 
 .containerParagraph {
+  color: #2d3d33;
   text-transform: none;
   line-height: 1.5em;
   font-size: 18px;
   font-weight: 400;
 }
-
-/* color: #2d3d33; */
