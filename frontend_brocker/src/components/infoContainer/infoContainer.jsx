@@ -1,9 +1,13 @@
 import React from 'react'
+import ContainerText from '../ContainerText/ContainerText';
+import styles from './InfoContainer.module.css';
 
-function infoContainer() {
+function InfoContainer() {
   return (
-    <div>infoContainer</div>
+    <div className={styles.mainContainer}>
+        <ContainerText title="a" content="b" ></ContainerText>
+    </div>
   )
 }
 
-export default infoContainer;
+export default InfoContainer;

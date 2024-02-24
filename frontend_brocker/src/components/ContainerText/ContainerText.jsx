@@ -1,15 +1,18 @@
-import React from "react";
-import styles from "./ContainerText.module.css";
+import styles from './ContainerText.module.css'
 
-function ContainerText() {
+function ContainerText({title, content}) {
   return (
     <div className={styles.container}>
-      <h2 className={styles.containerTitle}>Esp32 con MQTT</h2>
-      <p className={styles.containerParagraph}>
-        Esta es una prueba de conexión los mensajes son enviados a traves de un
+      <span className={styles.containerTitle}>
+        {/* Esp32 con MQTT */}
+        {title}
+      </span>
+      <span className={styles.containerParagraph}>
+        {/* Esta es una prueba de conexión los mensajes son enviados a traves de un
         socket y el socket los recibe a partir de un broker que tiene de
-        publicador un esp32
-      </p>
+        publicador un esp32 */}
+        {content}
+      </span>
     </div>
   );
 }
