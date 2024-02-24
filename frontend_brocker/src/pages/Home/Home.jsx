@@ -5,7 +5,9 @@ import ImageContainer from '../../components/imageContainer/ImageContainer'
 
 function Home() {
   return (
-    <main className={styles.main}></main>
+    <main className={styles.main}>
+      <ImageContainer />
+    </main>
   )
 }
 
