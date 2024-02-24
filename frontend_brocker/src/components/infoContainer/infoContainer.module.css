@@ -6,4 +6,5 @@
   color: #c8e0eb;
   background-color: #4f637e;
   border-radius: 20px;
+  grid-column-start: 1;
 }

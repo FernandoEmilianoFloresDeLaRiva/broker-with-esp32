@@ -8,6 +8,7 @@
   text-align: justify;
   text-wrap: pretty;
   margin: 10%;
+  grid-column-start: 1
 }
 
 .containerTitle {
