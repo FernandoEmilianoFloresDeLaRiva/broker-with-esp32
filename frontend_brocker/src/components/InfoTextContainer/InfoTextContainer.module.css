@@ -1,24 +1,21 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
   height: 100%;
-  text-align: justify;
   text-wrap: pretty;
-  margin: 10%;
 }
-.containerNumber{
+.containerNumber {
   color: #ffffff;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 550;
   line-height: 1.4em;
 }
 .containerParagraph {
   color: #ffffff;
   text-transform: none;
-  line-height: 1.5em;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 450;
 }

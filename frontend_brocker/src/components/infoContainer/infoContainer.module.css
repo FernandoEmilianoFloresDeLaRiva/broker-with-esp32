@@ -1,10 +1,13 @@
 .container {
-  width: 100%;
+  position: absolute;
+  bottom: 13%;
+  right: 0;
+  width: 130%;
+  height: 30%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   color: #c8e0eb;
-  background-color: #4f637e;
+  background-color: #3f4f64;
   border-radius: 20px;
-  grid-column-start: 1;
 }

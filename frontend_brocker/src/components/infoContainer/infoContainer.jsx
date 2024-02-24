@@ -1,13 +1,22 @@
-import styles from './InfoContainer.module.css';
-import InfoTextContainer from "../../components/InfoTextContainer/InfoTextContainer"
+import styles from "./infoContainer.module.css";
+import InfoTextContainer from "../../components/InfoTextContainer/InfoTextContainer";
+import { useSocketData } from "../../hooks/useSocketData";
 function InfoContainer() {
+  const { data, isLoading } = useSocketData();
+  console.log(data);
   return (
     <div className={styles.container}>
-      <InfoTextContainer number={'384'} content={'Successful projects'}/>
-      <InfoTextContainer number={'386'} content={'Successful'}/>
-      <InfoTextContainer number={'385'} content={'Successful projects'}/>
+      <InfoTextContainer number={`${data?.humedad}%`} content={"Humedad:"} />
+      <InfoTextContainer
+        number={`${parseInt(data?.temperatura, 10)}°C`}
+        content={"Temperatura:"}
+      />
+      <InfoTextContainer
+        number={data?.fototransistor}
+        content={"Fototransistor:"}
+      />
     </div>
-  )
+  );
 }
 
 export default InfoContainer;
