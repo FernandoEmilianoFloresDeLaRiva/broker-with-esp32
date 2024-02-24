@@ -1,16 +1,11 @@
-import styles from "./ImageContainer.module.css";
-import VideoRef from "../../assets/media/Toothless Dancing _ Green Screen.mp4";
 import React from "react";
-import styles from './ImageContainer.module.css'
-import VideoRef from '../../assets/media/toothless-dragon-toothless.gif'
-import React from 'react';
+import styles from "./ImageContainer.module.css";
+import VideoRef from "../../assets/media/toothless-dragon-toothless.gif";
 
 function ImageContainer() {
   return (
     <picture className={styles.containerVideo}>
-      <video autoPlay loop className={styles.video}>
-        <source src={VideoRef} type="video/mp4" />
-      </video>
+      <img src={VideoRef} alt="Rox bailando" className={styles.video} />
     </picture>
   );
 }
