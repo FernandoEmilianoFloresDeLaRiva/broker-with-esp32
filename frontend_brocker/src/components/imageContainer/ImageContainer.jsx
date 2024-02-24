@@ -1,6 +1,9 @@
 import styles from "./ImageContainer.module.css";
 import VideoRef from "../../assets/media/Toothless Dancing _ Green Screen.mp4";
 import React from "react";
+import styles from './ImageContainer.module.css'
+import VideoRef from '../../assets/media/toothless-dragon-toothless.gif'
+import React from 'react';
 
 function ImageContainer() {
   return (
