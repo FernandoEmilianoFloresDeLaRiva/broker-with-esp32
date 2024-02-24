@@ -6,15 +6,21 @@ function InfoContainer() {
   console.log(data);
   return (
     <div className={styles.container}>
-      <InfoTextContainer number={`${data?.humedad}%`} content={"Humedad:"} />
-      <InfoTextContainer
-        number={`${parseInt(data?.temperatura, 10)}°C`}
-        content={"Temperatura:"}
-      />
-      <InfoTextContainer
-        number={data?.fototransistor}
-        content={"Fototransistor:"}
-      />
+      {isLoading ? (
+        <InfoTextContainer content={"Cargando datos..."} />
+      ) : (
+        <>
+          <InfoTextContainer number={`${data?.humedad}%`} content={"Humedad"} />
+          <InfoTextContainer
+            number={`${parseInt(data?.temperatura, 10)}°C`}
+            content={"Temperatura"}
+          />
+          <InfoTextContainer
+            number={data?.fototransistor}
+            content={"Fototransistor"}
+          />
+        </>
+      )}
     </div>
   );
 }
