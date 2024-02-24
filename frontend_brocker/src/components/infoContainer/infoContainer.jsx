@@ -1,11 +1,11 @@
-import React from 'react'
-import styles from './InfoContainer.module.css';
+import React from "react";
+import styles from "./infoContainer.module.css";
+import { useSocketData } from "../../hooks/useSocketData";
 
 function InfoContainer() {
-  return (
-    <div className={styles.container}>
-    </div>
-  )
+  const { data, isLoading } = useSocketData();
+  console.log(data)
+  return <div className={styles.container}></div>;
 }
 
 export default InfoContainer;
