@@ -4,7 +4,9 @@ import styles from './InfoContainer.module.css';
 
 function InfoContainer() {
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.container}>
+        <ContainerText title="a" content="b" ></ContainerText>
+        <ContainerText title="a" content="b" ></ContainerText>
         <ContainerText title="a" content="b" ></ContainerText>
     </div>
   )
